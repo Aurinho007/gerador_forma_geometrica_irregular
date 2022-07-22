@@ -1,0 +1,86 @@
+body{
+    margin: 0px;
+    background-color: var(--background);
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+ }
+ 
+ :root{
+     --background: #000;
+     --text-color: #F5CB5C;
+     --btn: #D52941;
+     --scd: #E8EDDF;
+     --gray: #424651;
+ 
+ }
+ 
+ #container{
+     width: 100vw;
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ #section{
+     margin-top: 10px;
+     display: flex;
+     flex-direction: column;
+ 
+ }
+ 
+ .label{
+     color: var(--text-color);
+     font-size: 1.3rem;
+     margin-bottom: 10px;
+     text-align: center;
+     margin-top: 20px;
+ }
+ 
+ .input{
+     padding: 0.8rem;
+     width: 380px;
+     height: 5px;
+     border-radius: 5px;
+     font-size: 18px;
+     color: var(--text-color);
+     background-color: var(--gray);
+     outline: none;
+     border: 0
+ 
+ }
+ 
+ .btns{
+     display: flex;
+     justify-content: center;
+ }
+ 
+ .btn{
+     border: none;
+     width: 120px;
+     height: 35px;
+     align-self: center;
+     border: 2px solid var(--text-color);
+     border-radius: 5px;
+     background-color: var(--background);
+     color: var(--scd);
+     cursor: pointer;
+     font-size: 1rem;
+     margin: 20px 5px;
+ }
+ 
+ #read-me-container{
+     height: 200px;
+     width: 80%;
+ }
+ 
+ p{
+     color: var(--scd);
+     text-align: center;
+     font-size: 1.1rem;
+ }
+ 
+ #canvas{
+     margin-top: -50px;
+ }
