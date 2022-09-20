@@ -33,7 +33,6 @@ function geraAngulosInternos(qnt_lado){
         let limite_inferior = angulos[i] * -0.9; 
         let limite_superior = angulos[i] * 0.9;
         
-        
         let valor = Math.random() * (limite_superior - limite_inferior + 1) + limite_inferior
 
         angulos[i] += valor;
@@ -62,7 +61,6 @@ let gx = canva.getContext('2d')
 gx.moveTo(x, y)
 
 function desenha(qnt_lado, angulos){
-    console.log(angulos)
     for(let i = 0;i<qnt_lado;i++){
         gx.beginPath()
         gx.lineTo(x-calcDx(angulo_atual), y-calcDy(angulo_atual))
