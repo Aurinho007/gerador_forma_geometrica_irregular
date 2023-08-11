@@ -22,7 +22,6 @@ document.querySelector('#gerar').addEventListener('click', (e) => {
 
 document.querySelector('#limpar').addEventListener('click', (e) => {
     e.preventDefault()
-    canva.beginPath();
     canva.reset()
 })
 
