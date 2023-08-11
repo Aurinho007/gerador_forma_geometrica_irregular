@@ -23,7 +23,7 @@ document.querySelector('#gerar').addEventListener('click', (e) => {
 document.querySelector('#limpar').addEventListener('click', (e) => {
     e.preventDefault()
     canva.beginPath();
-    canva.clearRect(x, y, 400, 400);
+    canva.reset()
 })
 
 function geraAngulosInternos(qnt_lado){
