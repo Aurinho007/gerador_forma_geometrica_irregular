@@ -1,7 +1,10 @@
 let medida_lado = 150
-
 let x = 200 
 let y = 200 
+
+let canva = document.querySelector('#canvas')
+let gx = canva.getContext('2d')
+gx.moveTo(x, y)
 
 let vertices = []
 
@@ -17,7 +20,9 @@ document.querySelector('#gerar').addEventListener('click', (e) => {
     input.focus()
 })
 
-document.querySelector('#limpar').addEventListener('click', () => location.reload())
+document.querySelector('#limpar').addEventListener('click', () => {
+    canva.clearRect(x, y, 400, 400);
+})
 
 function geraAngulosInternos(qnt_lado){
     let angulos = []
@@ -54,11 +59,6 @@ function calcDy(angulo_atual){
     let dy = medida_lado * Math.sin(angulo_atual*0.0174533)
     return dy
 }
-
-let canva = document.querySelector('#canvas')
-let gx = canva.getContext('2d')
-
-gx.moveTo(x, y)
 
 function desenha(qnt_lado, angulos){
     for(let i = 0;i<qnt_lado;i++){
