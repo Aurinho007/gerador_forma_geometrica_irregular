@@ -20,7 +20,8 @@ document.querySelector('#gerar').addEventListener('click', (e) => {
     input.focus()
 })
 
-document.querySelector('#limpar').addEventListener('click', () => {
+document.querySelector('#limpar').addEventListener('click', (e) => {
+    e.preventDefault()
     canva.clearRect(x, y, 400, 400);
 })
 
